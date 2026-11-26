@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Co masz w lodówce? (opcjonalnie):"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Kompaktowy ScrollView mieszczący 3-4 rzędy kafelków -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_marginTop="6dp"
+        android:fadeScrollbars="false">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacingHorizontal="6dp"
+            app:chipSpacingVertical="4dp" />
+    </ScrollView>
+
+    <!-- Mniejszy elastyczny odstęp odgraniczający sekcję składników od karuzeli -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35" />
+
+    <TextView
+        android:id="@+id/text_pool_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:text="Dostępne obiady w puli: 0"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="14dp"
+        app:cardBackgroundColor="@color/card_surface"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:strokeColor="@color/teal_light_container"
+        app:strokeWidth="1.5dp">
+
+        <TextSwitcher
+            android:id="@+id/text_switcher_meal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/text_result_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:text=""
+        android:textColor="#444444"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_draw"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:text="LOSUJ OBIAD"
+        android:textSize="18sp" />
+
+    <!-- Dodatkowy mały odstęp na dole, żeby karuzela była lekko wyżej niż sam dół ekranu -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15" />
+
+</LinearLayout>

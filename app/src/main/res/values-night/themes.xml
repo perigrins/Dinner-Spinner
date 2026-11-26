@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DinnerSpinner" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_main</item>
+        <item name="colorOnPrimary">@color/teal_dark</item>
+
+        <item name="colorSecondaryContainer">@color/teal_light_container</item>
+        <item name="colorOnSecondaryContainer">@color/text_primary</item>
+
+        <item name="android:windowBackground">@color/teal_bg</item>
+        <item name="android:statusBarColor">@color/teal_bg</item>
+
+        <item name="colorSurface">@color/card_surface</item>
+        <item name="colorSurfaceContainer">@color/teal_light_container</item>
+        <item name="colorSurfaceContainerLow">@color/card_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/teal_light_container</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+    </style>
+    <style name="Theme.DinnerSpinner" parent="Base.Theme.DinnerSpinner" />
+</resources>

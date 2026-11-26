@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DinnerSpinner" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_main</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Jasne tło podświetlenia dla Chipów i aktywnej ikony w dolnym menu -->
+        <item name="colorSecondaryContainer">@color/teal_light_container</item>
+        <item name="colorOnSecondaryContainer">@color/teal_dark</item>
+
+        <!-- Delikatnie chłodne, jasne tło ekranów -->
+        <item name="android:windowBackground">@color/teal_bg</item>
+
+        <!-- Kolor paska stanu na samej górze ekranu -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="colorSurfaceContainer">@color/teal_light_container</item>
+    </style>
+
+    <style name="Theme.DinnerSpinner" parent="Base.Theme.DinnerSpinner" />
+</resources>
